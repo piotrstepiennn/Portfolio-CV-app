@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "institution": "Politechnika Świętokrzyska",
+    "degree": "Magister inżynier (Mgr inż.), Informatyka",
+    "date": "2022 – 2023",
+    "grade": 5
+  },
+  {
+    "id": 2,
+    "institution": "Uniwersytet Jana Kochanowskiego w Kielcach",
+    "degree": "Inżynier (Inż.), Informatyka",
+    "date": "2018 – 2022",
+    "grade": 5
+  }
+]

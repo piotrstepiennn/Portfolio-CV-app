@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "title": "Microsoft Certified: AZ-900 Azure Fundamentals",
+    "provider": "Microsoft",
+    "issuedDate": "gru 2023",
+    "skills": ["Azure"]
+  },
+  {
+    "id": 2,
+    "title": "ASP.NET Core MVC - praktyczny kurs (C# .NET 7)",
+    "provider": "Udemy",
+    "issuedDate": "lis 2023",
+    "skills": ["Entity Framework", "C#", "ASP.NET MVC", "Test jednostkowy"]
+  },
+  {
+    "id": 3,
+    "title": "Docker & Kubernetes: The Practical Guide [2023 Edition]",
+    "provider": "Udemy",
+    "issuedDate": "lis 2023",
+    "skills": ["Kubernetes", "Docker"]
+  },
+  {
+    "id": 4,
+    "title": "C# .NET: Entity Framework Core",
+    "provider": "Udemy",
+    "issuedDate": "paź 2023",
+    "skills": ["Entity Framework", "C#"]
+  },
+  {
+    "id": 5,
+    "title": "Querying Microsoft SQL Server with Transact-SQL",
+    "provider": "Udemy",
+    "issuedDate": "paź 2023",
+    "skills": ["T-SQL", "Microsoft SQL Server", "SQL"]
+  },
+  {
+    "id": 6,
+    "title": "SOLID, Wzorce Projektowe w C# (.NET)",
+    "provider": "Udemy",
+    "issuedDate": "paź 2023",
+    "skills": ["Wzorce projektowe", "SOLID", "C#"]
+  },
+  {
+    "id": 7,
+    "title": "React 18 Tutorial and Projects Course",
+    "provider": "Udemy",
+    "issuedDate": "lip 2023",
+    "skills": ["JavaScript", "React", "HTML5", "Redux"]
+  },
+  {
+    "id": 8,
+    "title": "JavaScript Algorithms and Data Structures",
+    "provider": "freeCodeCamp",
+    "issuedDate": "mar 2023",
+    "skills": ["JavaScript"]
+  },
+  {
+    "id": 9,
+    "title": "Praktyczny kurs ASP.NET Core REST Web API od podstaw (C#)",
+    "provider": "Udemy",
+    "issuedDate": "sie 2021",
+    "skills": ["C#", ".NET"]
+  },
+  {
+    "id": 10,
+    "title": "IT Essentials",
+    "provider": "Cisco Networking Academy",
+    "issuedDate": "kwi 2017",
+    "skills": [
+      "Serwis sprzętu komputerowego",
+      "Instalacja Oprogramowania",
+      "Diagnostyka sprzętu",
+      "Instalacja sprzętu"
+    ]
+  }
+]

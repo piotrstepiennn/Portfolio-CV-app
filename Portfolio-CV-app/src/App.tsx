@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar.tsx";
 import Info from "./components/Info.tsx";
-
+import About from "./components/About.tsx";
 function App() {
 
 
@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar/>
       <Info/>
+      <About/>
     </>
   );
 }

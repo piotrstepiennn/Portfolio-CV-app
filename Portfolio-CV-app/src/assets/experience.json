@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "position": "Stażysta w centrali NBP - Departament IT",
+    "company": "Narodowy Bank Polski (NBP) · Pełny etat",
+    "date": "wrz 2023 –obecnie · 4 mies.",
+    "location": "Warszawa, Woj. Mazowieckie, Polska",
+    "jobType": "Praca stacjonarna"
+  },
+  {
+    "id": 2,
+    "position": "Programista C# · Praktyka",
+    "company": "GamaSystem",
+    "date": "lip 2022 – sie 2022 · 2 mies.",
+    "location": "Kielce, Woj. Świętokrzyskie, Polska",
+    "jobType": "Praca stacjonarna"
+  },
+  {
+    "id": 3,
+    "position": "Serwis Komputerowy · Praktyka",
+    "company": "Komputronik",
+    "date": "lip 2016 – wrz 2016 · 3 mies.",
+    "location": "Końskie, Woj. Świętokrzyskie, Polska",
+    "jobType": "Praca stacjonarna"
+  }
+]
