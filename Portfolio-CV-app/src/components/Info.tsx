@@ -1,4 +1,3 @@
-
 import Img from '../assets/react.svg'
 import Profile from "./Profile.tsx";
 

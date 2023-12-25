@@ -12,7 +12,8 @@ const Card = (props) => {
                     <div className="card-body d-flex flex-column flex-grow-1">
                         <h5 className="card-title text-center text-dark">{props.Subtitle}</h5>
                         <h6 className="card-subtitle text-center">{props.Duration}</h6>
-                        <p className="card-text text-center text-secondary">{props.Text}</p>
+                        <p className="card-text text-center text-secondary mb-0">{props.Text}</p>
+                        <p className="card-text text-center text-secondary">{props.Location}</p>
                     </div>
                 </div>
             </div>

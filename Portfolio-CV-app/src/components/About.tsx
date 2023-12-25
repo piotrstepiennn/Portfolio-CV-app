@@ -18,19 +18,20 @@ const About = () => {
             <p className="text-center text-nowrap text-dark fw-bold fs-1 mt-0 mb-5">O mnie!</p>
 
             <div className="row">
-                {/*<div className="col-3">*/}
-                {/*    <img src={Img} className="img-fluid mx-auto d-block  w-100 h-100" alt="image"/>*/}
-                {/*</div>*/}
-                {experiences.map((experience) =>(
-                    <Card key={experience.id} Title="Doświadczenie" Subtitle={experience.position} Duration={experience.date} Text={experience.company}/>
+                <p className="text-center text-nowrap text-dark fw-bold fs-3 mt-0 ">Doświadczenie zawodowe</p>
+                {experiences.map((experience) => (
+                    <Card key={experience.id} Title="Doświadczenie" Subtitle={experience.position}
+                          Duration={experience.date} Text={experience.company} Location={experience.location}/>
                 ))}
-
+                <p className="text-center text-nowrap text-dark fw-bold fs-3 mt-0 ">Wykształcenie</p>
                 {education.map((edu) => (
-                    <Card key={edu.id} Title="Wykształcenie" Duration={edu.date} Subtitle={edu.degree} Text={edu.institution} />
+                    <Card key={edu.id} Title="Wykształcenie" Duration={edu.date} Subtitle={edu.degree}
+                          Text={edu.institution} Location={edu.location}/>
                 ))}
-
-                {certifications.map((cert)=>(
-                    <Card key={cert.id} Title="Certyfikat" Duration={cert.issuedDate} Subtitle={cert.title} Text={cert.provider} />
+                <p className="text-center text-nowrap text-dark fw-bold fs-3 mt-0 ">Zdobyte certyfikaty</p>
+                {certifications.map((cert) => (
+                    <Card key={cert.id} Title="Certyfikat" Duration={cert.issuedDate} Subtitle={cert.title}
+                          Text={cert.provider}/>
                 ))}
             </div>
         </div>
