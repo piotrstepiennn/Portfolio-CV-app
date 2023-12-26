@@ -1,9 +1,11 @@
-import React from 'react';
-const cardStyle:React.CSSProperties = {
-    "width": "30rem"
-    //"maxHeight":"10rem"
-};
-const Card = (props) => {
+interface propsTypes {
+    Title: string,
+    Subtitle: string
+    Duration: string
+    Text: string
+    Location?: string
+}
+const Card = (props:propsTypes) => {
     return (
         <div className="col-md-4 mb-4">
             <div className="d-flex flex-column h-100">
