@@ -34,8 +34,6 @@ const Project = (props:propsTypes) => {
             {transformTechnologiesToArray().map((tmp, index) => (
                 <p key={index} className="mb-0 text-left text-dark"><span className="fw-bolder">{tmp.category}:</span> {tmp.tech}</p>
             ))}
-
-            {/*<p className="mb-0 text-center text-dark">{props.Technologies}</p>*/}
         </div>
     );
 };

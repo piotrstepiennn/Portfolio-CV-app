@@ -3,6 +3,7 @@ import Info from "./components/Info.tsx";
 import About from "./components/About.tsx";
 import Skills from "./components/Skills.tsx"
 import Projects from "./components/Projects.tsx"
+import ContactInfo from "./components/ContactInfo.tsx";
 function App() {
   return (
     <>
@@ -11,6 +12,8 @@ function App() {
       <About/>
       <Skills/>
       <Projects/>
+      <ContactInfo/>
+      <Navbar/>
     </>
   );
 }

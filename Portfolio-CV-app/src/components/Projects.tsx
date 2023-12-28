@@ -7,7 +7,7 @@ const style:React.CSSProperties = {
 
 const Projects = () => {
     return (
-        <div className="container mt-5 align-items-center justify-content-center container">
+        <div id="projects" className="container mt-5 align-items-center justify-content-center container">
             <p className="text-center text-nowrap text-secondary fw-bold fs-5" style={style}>Moje najciekawsze</p>
             <p className="text-center text-nowrap text-dark fw-bold fs-1 mt-0">Projekty!</p>
             <p className="text-center text-nowrap text-secondary fw-bold fs-5 mb-5">Wejdź w link przy opisie projektu

@@ -13,7 +13,7 @@ const style:React.CSSProperties = {
 
 const About = () => {
     return (
-        <div className="container mt-5 align-items-center justify-content-center container">
+        <div id="about" className="container mt-5 align-items-center justify-content-center container">
             <p className="text-center text-nowrap text-secondary fw-bold fs-5" style={style}>Więcej informacji</p>
             <p className="text-center text-nowrap text-dark fw-bold fs-1 mt-0 mb-5">O mnie!</p>
 
