@@ -1,0 +1,15 @@
+export const logoCisco = require("./images/logo_cisco.png");
+export const logoFreecodecamp = require("./images/logo_freecodecamp.png");
+export const logoGama = require("./images/logo_gamasystem.png");
+export const logoKomputronik = require("./images/logo_komputronik.png");
+export const logoMicrosoft = require("./images/logo_microsoft.svg");
+export const logoNBP = require("./images/logo_nbp.jpg");
+export const logoPSK = require("./images/logo_psk.jpg");
+export const logoUdemy = require("./images/logo_udemy.png");
+export const logoUJK = require("./images/logo_ujk.png");
+export const logoZSP = require("./images/logo_zsp.jpg");
+export const experiences = require("./experience.json");
+export const education = require("./education.json");
+export const certifications = require("./certifications.json");
+export const flag_pl = require("./images/flag_pl.png");
+export const flag_uk = require("./images/flag_uk.png");
