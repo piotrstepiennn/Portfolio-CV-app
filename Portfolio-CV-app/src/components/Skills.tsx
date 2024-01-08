@@ -1,6 +1,6 @@
 import React from "react";
 import Skill from "./Skill.tsx";
-import skills from "../assets/skills.json";
+import { skills } from "../assets";
 const style: React.CSSProperties = {
   marginTop: "30rem",
 };

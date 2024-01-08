@@ -38,7 +38,6 @@ const logoMap: logoMap = {
 };
 
 const getLogo = (logo: string) => {
-  console.log(logo);
   return logoMap[logo] || "";
 };
 

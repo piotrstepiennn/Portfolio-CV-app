@@ -17,7 +17,7 @@ const Profile = () => {
   return (
     <div className="container m-lg-4 mt-4 w-100 ">
       <p className="text-center text-nowrap text-secondary fw-bold fs-5">
-        Cześć, jestem
+        {"profile.message"}
       </p>
       <p className="text-center text-nowrap text-dark fw-bold fs-1">
         Piotr Stępień

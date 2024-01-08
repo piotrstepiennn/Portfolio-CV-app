@@ -1,0 +1,34 @@
+{
+  "navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "profile": {
+    "message": "Hello, I'm",
+    "cvButton_pl": "Download CV PL",
+    "cvButton_en": "Download CV EN",
+    "contact": "Contact"
+  },
+  "about":{
+    "message": "Get To Know More",
+    "message2": "About Me",
+    "work_experience": "Explore My",
+    "experience": "Experience"
+  },
+  "skills": {
+    "message": "Browse My",
+    "message2": "Projects!",
+    "list_of_skills_header": "List of skills and proficiency level in a given technology"
+  },
+  "projects": {
+    "message": "My most interesting",
+    "message2": "Projects",
+    "message3": "Click on the link in the project description to learn more details"
+  },
+  "contact":{
+    "contact_me": "Get in Touch",
+    "body": "Contact Me!"
+  }
+}
