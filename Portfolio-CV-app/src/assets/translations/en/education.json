@@ -2,7 +2,7 @@
   {
     "id": 1,
     "institution": "Kielce University of Technology",
-    "degree": "Master of Engineering (M.Eng.), Computer Science",
+    "degree": "Master of Engineering, Computer Science",
     "date": "2022 – 2023",
     "logo": "psk",
     "location": "Kielce, Świętokrzyskie, Poland",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "institution": "Jan Kochanowski University in Kielce",
-    "degree": "Bachelor of Engineering (B.Eng.), Computer Science",
+    "degree": "Bachelor of Engineering, Computer Science",
     "date": "2018 – 2022",
     "logo": "ujk",
     "location": "Kielce, Świętokrzyskie, Poland",

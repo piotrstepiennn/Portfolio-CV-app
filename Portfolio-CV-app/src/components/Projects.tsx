@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Project from "./Project.tsx";
-import { projects } from "../assets";
+import { useTranslation } from "react-i18next";
+import { loadJson } from "../utils.ts";
+
 const style: React.CSSProperties = {
   marginTop: "25rem",
 };
 
+interface project {
+  id: number;
+  title: string;
+  link: string;
+  description: string;
+  technologies: object;
+}
+
 const Projects = () => {
+  const [t, i18n] = useTranslation();
+  const [projects, setProjects] = useState([]);
+  const currentLanguage = i18n.language;
+
+  useEffect(() => {
+    Promise.all([loadJson("projects", setProjects, currentLanguage)]);
+  }, [currentLanguage]);
+
   return (
     <div
       id="projects"
@@ -15,16 +33,16 @@ const Projects = () => {
         className="text-center text-nowrap text-secondary fw-bold fs-5"
         style={style}
       >
-        Moje najciekawsze
+        {t("global.projects.message")}
       </p>
       <p className="text-center text-nowrap text-dark fw-bold fs-1 mt-0">
-        Projekty!
+        {t("global.projects.message2")}
       </p>
       <p className="text-center text-nowrap text-secondary fw-bold fs-5 mb-5">
-        Wejdź w link przy opisie projektu aby poznać więcej szczegółów
+        {t("global.projects.message3")}
       </p>
       <div className="row">
-        {projects.map((project) => (
+        {projects.map((project: project) => (
           <Project
             key={project.id}
             Title={project.title}

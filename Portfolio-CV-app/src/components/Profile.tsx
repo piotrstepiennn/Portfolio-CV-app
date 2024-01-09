@@ -1,8 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const style: React.CSSProperties = {
-  borderWidth: "2px" /* Grubość obramowania */,
-  borderRadius: "15px" /* Stopień zaokrąglenia krawędzi */,
+  borderWidth: "2px",
+  borderRadius: "15px",
   fontWeight: "bold",
   width: "120px",
 };
@@ -14,10 +15,11 @@ const iconSize: React.CSSProperties = {
 };
 
 const Profile = () => {
+  const [t] = useTranslation();
   return (
     <div className="container m-lg-4 mt-4 w-100 ">
       <p className="text-center text-nowrap text-secondary fw-bold fs-5">
-        {"profile.message"}
+        {t("global.profile.message")}
       </p>
       <p className="text-center text-nowrap text-dark fw-bold fs-1">
         Piotr Stępień
@@ -31,14 +33,14 @@ const Profile = () => {
           className="btn btn-outline-dark mx-2  text-nowrap w-25"
           style={style}
         >
-          Pobierz CV PL
+          {t("global.profile.cvButton_pl")}
         </button>
         <button
           type="button"
           className="btn btn-outline-dark mx-2 text-nowrap w-25"
           style={style}
         >
-          Pobierz CV ENG
+          {t("global.profile.cvButton_en")}
         </button>
       </div>
       <div className="text-center mt-2">
@@ -51,7 +53,7 @@ const Profile = () => {
           }}
           style={style}
         >
-          Kontakt
+          {t("global.profile.contact")}
         </button>
       </div>
       <div className="d-flex justify-content-center">

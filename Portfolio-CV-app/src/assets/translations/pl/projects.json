@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Minimalistyczne Portfolio/CV z wykorzystaniem technik CI/CD",
     "link": "https://github.com/piotrstepiennn/Portfolio-CV-app",
-    "description": "Jest to aplikacja webowa w której obecnie się znajdujesz. Jest to minimalistyczna aplikacja pełniąca rolę portfolio oraz CV. Aplikacja skonfigurowana jest z wykorzystaniem technik CI/CD, głównym celem jej stowrzenia, poza przedstawieniem swojej osoby była chęć własnoręcznej konfiguracji technologii wykorzysytywanej w CI/CD, co pozwoliło na automatyczne testowanie, buildowanie, tworzenie obrazu dockera oraz wdrażanie obrazu aplikacji na maszynę wirtualną Azure po każdym commicie pushniętym na githuba, technologie wykorzystane do napisania aplikacji oraz CI/CD przedstawiam poniżej.",
+    "description": "Jest to aplikacja webowa w której obecnie się znajdujesz. Jest to minimalistyczna aplikacja pełniąca rolę portfolio oraz CV. Aplikacja skonfigurowana jest z wykorzystaniem technik CI/CD, głównym celem jej stowrzenia, poza przedstawieniem swojej osoby była chęć własnoręcznej konfiguracji technologii wykorzysytywanych w procesie CI/CD, co pozwoliło na automatyczne testowanie, buildowanie, tworzenie obrazu dockera oraz wdrażanie obrazu aplikacji na maszynę wirtualną Azure po każdym commicie pushniętym na githuba, technologie wykorzystane do napisania aplikacji oraz CI/CD przedstawiam poniżej.",
     "technologies": {
       "frontend": "Reactjs, Typescript",
       "CI/CD":  "Github, Docker, Kubernetes, Jenkins, Azure"
