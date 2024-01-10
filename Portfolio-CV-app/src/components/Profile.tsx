@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { cv_pl, cv_en } from "../assets";
 
 const style: React.CSSProperties = {
   borderWidth: "2px",
@@ -28,20 +29,28 @@ const Profile = () => {
         Full Stack Developer
       </p>
       <div className="btn-group">
-        <button
+        <a
           type="button"
           className="btn btn-outline-dark mx-2  text-nowrap w-25"
           style={style}
+          href={cv_pl}
+          download="Piotr_Stępień_CV_PL"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {t("global.profile.cvButton_pl")}
-        </button>
-        <button
+        </a>
+        <a
           type="button"
           className="btn btn-outline-dark mx-2 text-nowrap w-25"
           style={style}
+          href={cv_en}
+          download="Piotr_Stępień_CV_EN"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {t("global.profile.cvButton_en")}
-        </button>
+        </a>
       </div>
       <div className="text-center mt-2">
         <button

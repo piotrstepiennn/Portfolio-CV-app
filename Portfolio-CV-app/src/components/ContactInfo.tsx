@@ -14,7 +14,7 @@ const iconSize: React.CSSProperties = {
   borderRadius: "13px",
 };
 const ContactInfo = () => {
-  const [t, i18n] = useTranslation();
+  const [t] = useTranslation();
   return (
     <div
       id="contact"

@@ -22,3 +22,5 @@ export const skills_en = require("./translations/en/skills.json");
 export const global_en = require("./translations/en/global.json");
 export const flag_pl = require("./images/flag_pl.png");
 export const flag_uk = require("./images/flag_uk.png");
+export const cv_pl = require("./CV/CV_PL.pdf");
+export const cv_en = require("./CV/CV_EN.pdf");
