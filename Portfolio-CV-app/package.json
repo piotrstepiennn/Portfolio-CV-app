@@ -34,7 +34,6 @@
     "jsdom": "^23.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
-    "vite-plugin-require": "^0.0.3",
     "vitest": "^1.1.3"
   }
 }
