@@ -1,4 +1,7 @@
-export const logoCisco = require("./images/logo_cisco.png");
+/* eslint @typescript-eslint/no-var-requires: "off" */
+import * as logoc from "./images/logo_cisco.png";
+export const logoCisco = logoc.default;
+//export const logoCisco = require("./images/logo_cisco.png");
 export const logoFreecodecamp = require("./images/logo_freecodecamp.png");
 export const logoGama = require("./images/logo_gamasystem.png");
 export const logoKomputronik = require("./images/logo_komputronik.png");
