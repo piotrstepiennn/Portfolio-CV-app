@@ -6,7 +6,7 @@ const style: React.CSSProperties = {
   borderWidth: "2px",
   borderRadius: "15px",
   fontWeight: "bold",
-  width: "120px",
+  minWidth: "160px",
 };
 const iconSize: React.CSSProperties = {
   height: "2rem",
@@ -18,7 +18,7 @@ const iconSize: React.CSSProperties = {
 const Profile = () => {
   const [t] = useTranslation();
   return (
-    <div className="container m-lg-4 mt-4 w-100 ">
+    <div data-testid="profile" className="container m-lg-4 mt-4 w-100 ">
       <p className="text-center text-nowrap text-secondary fw-bold fs-5">
         {t("global.profile.message")}
       </p>

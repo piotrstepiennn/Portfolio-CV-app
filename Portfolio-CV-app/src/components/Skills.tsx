@@ -24,7 +24,7 @@ const Skills = () => {
 
   return (
     <div
-      id="skills"
+      data-testid="skills"
       className="container mt-5 align-items-center justify-content-center container"
     >
       <p

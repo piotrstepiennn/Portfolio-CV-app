@@ -83,7 +83,7 @@ const About = () => {
 
   return (
     <div
-      id="about"
+      data-testid="about"
       className="container mt-5 align-items-center justify-content-center container"
     >
       <p

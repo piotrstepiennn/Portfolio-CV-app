@@ -16,7 +16,10 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-white mt-3 mb-5">
+      <nav
+        data-testid="navbar"
+        className="navbar navbar-expand-lg navbar-light bg-white mt-3 mb-5"
+      >
         <div className="container">
           <a className="navbar-brand fs-1" href="#">
             Piotr Stępień
@@ -41,7 +44,7 @@ const Navbar = () => {
               <img
                 className="ms-4 border border-black"
                 src={language === "en" ? flag_uk : flag_pl}
-                alt={language === "en" ? "polski" : "english"}
+                alt={language === "en" ? "english" : "polski"}
                 style={{ width: "40px", height: "30px" }}
               />
             </button>
