@@ -66,7 +66,7 @@ const ContactInfo = () => {
             href="https://www.linkedin.com/in/piotr-st%C4%99pie%C5%84-b3a015285/"
             className="justify-content-center text-black d-flex link-secondary ms-1 mb-1"
           >
-            Linkedin
+            LinkedIn
           </a>
         </div>
       </div>
