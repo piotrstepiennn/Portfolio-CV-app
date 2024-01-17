@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "position": "Intern at NBP Headquarters - IT Department",
+    "company": "National Bank of Poland (NBP)",
+    "date": "Sep 2023 – Present",
+    "location": "Warsaw, Masovian Voivodeship, Poland",
+    "logo": "nbp",
+    "jobType": "On-site Employment"
+  },
+  {
+    "id": 2,
+    "position": ".Net C# Developer Intern",
+    "company": "GamaSystem",
+    "date": "Jul 2022 – Aug 2022",
+    "location": "Kielce, Świętokrzyskie Voivodeship, Poland",
+    "logo": "gama",
+    "jobType": "On-site Employment"
+  },
+  {
+    "id": 3,
+    "position": "Computer Service Intern",
+    "company": "Komputronik",
+    "date": "Jul 2016 – Sep 2016",
+    "location": "Końskie, Świętokrzyskie Voivodeship, Poland",
+    "logo": "komputronik",
+    "jobType": "On-site Employment"
+  }
+]

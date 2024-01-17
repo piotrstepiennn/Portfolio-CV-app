@@ -1,0 +1,38 @@
+{
+  "navbar": {
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Moje Projekty",
+    "contact": "Kontakt"
+  },
+  "profile": {
+    "message": "Cześć, jestem",
+    "cvButton_pl": "Pobierz CV PL",
+    "cvButton_en": "Pobierz CV EN",
+    "contact": "Kontakt"
+  },
+  "about":{
+    "message": "Więcej informacji",
+    "message2": "O mnie!",
+    "work_experience": "Doświadczenie zawodowe",
+    "earned_certs": "Zdobyte certyfikaty",
+    "experience": "Doświadczenie",
+    "education": "Edukacja",
+    "certificate": "Certyfikat"
+  },
+  "skills": {
+    "message": "Poznaj moje",
+    "message2": "Umiejętności!",
+    "list_of_skills_header": "Wykaz umiejętności oraz stopień znajomości danej technologii"
+  },
+  "projects":{
+    "message":"Moje najciekawsze",
+    "message2": "Projekty",
+    "message3": "Wejdź w link przy opisie projektu aby poznać więcej szczegółów",
+    "used_technologies": "Wykorzystane technologie:"
+  },
+  "contact":{
+    "contact_me": "Skontaktuj się",
+    "body": "Kontakt!"
+  }
+}

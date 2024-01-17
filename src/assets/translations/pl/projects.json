@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "Minimalistyczne Portfolio/CV z wykorzystaniem technik CI/CD",
+    "link": "https://github.com/piotrstepiennn/Portfolio-CV-app",
+    "description": "Jest to aplikacja webowa w której obecnie się znajdujesz. Jest to minimalistyczna aplikacja pełniąca rolę portfolio oraz CV. Aplikacja skonfigurowana jest z wykorzystaniem technik CI/CD, głównym celem jej stowrzenia, poza przedstawieniem swojej osoby była chęć własnoręcznej konfiguracji technologii wykorzysytywanych w procesie CI/CD, co pozwoliło na automatyczne testowanie, buildowanie, tworzenie obrazu dockera oraz wdrażanie obrazu aplikacji na maszynę wirtualną Azure po każdym commicie pushniętym na githuba, technologie wykorzystane do napisania aplikacji oraz CI/CD przedstawiam poniżej.",
+    "technologies": {
+      "frontend": "Reactjs, Typescript",
+      "CI/CD":  "Github, Docker, Kubernetes, Jenkins, Azure"
+    }
+  },
+  {
+    "id": 2,
+    "title": "System uwierzytelniania wykorzystujący modelowanie 3D",
+    "link": "https://github.com/piotrstepiennn/MultiAuthenticationApp_.NetCoreWebApi-React",
+    "description": "Projekt obejmuje opracowanie innowacyjnego systemu uwierzytelniania użytkownika wykorzystującego techniki modelowania 3D. W ramach projektu opracowano skuteczne metody uwierzytelniania, takie jak captcha 3D, generowanie kodów dostępu i ich dostarczanie za pośrednictwem poczty elektronicznej i aplikacji mobilnej itp. 3D Captcha polega na przedstawieniu użytkownikowi trójwymiarowej sceny, w której musi on przejść test, aby potwierdzić swoją tożsamość jako człowiek. Test wymaga od użytkownika odtworzenia układu kostek w przestrzeni 3D w oparciu o wyświetlany wzór. Dodatkowo zaimplementowano system bezpieczeństwa serwera, w tym certyfikat SSL, funkcję hashowania do weryfikacji integralności danych przesyłanych pomiędzy klientem a serwerem oraz wykorzystanie tokenów JWT do działań po stronie serwera itp.",
+    "technologies": {
+      "frontend": "TypeScript, React, threejs",
+      "backend": "asp.net core web api",
+      "mobile_app": ".NET MAUI",
+      "database": "MSSSQL Express"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Aplikacja mobilna wspierająca zarządzanie magazynem wykorzystujaca skaner kodów kreskowych",
+    "link": "https://github.com/piotrstepiennn/warehouse-mobile-application-with-BarcodeScanner_XAMARIN",
+    "description": "Aplikacja mobilna pomagająca zarządzać magazynem wykonana przy użyciu C# i Xamarin.Forms. Aplikacja posiada zaimplementowane metody CRUD tj. tworzenie, odczytywanie, aktualizowanie i usuwanie produktu z bazy danych. Aplikacja pozwala również na zeskanowanie kodu kreskowego danego produktu za pomocą kamery telefonu (lub innego urządzenia mobilnego z kamerą), jeśli istnieje on w bazie danych wyświetla jego nazwę, kod kreskowy i ilość produktu w magazynie, w przeciwnym razie wyświetla informację, że produkt nie istnieje, ale można go dodać do bazy danych za pomocą aplikacji.",
+    "technologies": {
+      "mobile_app": "Xamarin.Forms, ZXing, C#",
+      "database": "MSSSQL Express"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Aplikacja do kopiowania plików w określonej kolejności",
+    "link": "https://github.com/piotrstepiennn/CopyFilesByModificationDate_WPF",
+    "description": "Aplikacja służy do kopiowania plików mp3 w kolejności zależnej od daty ostatniej modyfikacji pliku.Osobiście używam aplikacji do kopiowania muzyki na pendrive'a używanego w samochodzie - mam samochód ze starym radiem, które wymaga użycia transmitera FM do odtwarzania mp3 z pendrive'a, gdzie kolejność w jakiej plik został zapisany wpływa na kolejność odtwarzania, a ja chcę aby najnowsze utwory były na samym końcu folderu, więc stworzyłem tę aplikację aby usprawnić sortowanie muzyki :) Aplikacja wyświetla listę zawierającą tytuł utworu i datę jego ostatniej modyfikacji na podstawie plików w folderze plików źródłowych. Umożliwia usunięcie pliku z listy plików do skopiowania. Podczas kopiowania pasek postępu zwiększa się wraz z liczbą kopiowanych plików.",
+    "technologies": {
+      "wpf_app": "C#, .NET Framework WPF"
+    }
+  }
+]
+
+

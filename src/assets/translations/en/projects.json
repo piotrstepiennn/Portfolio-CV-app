@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Minimalist Portfolio/CV using CI/CD Techniques",
+    "link": "https://github.com/piotrstepiennn/Portfolio-CV-app",
+    "description": "This is a web application you are currently viewing. It serves as a minimalist portfolio and CV. The application is configured using CI/CD techniques. The main goal of its creation, besides presenting myself, was the hands-on configuration of the technology used in CI/CD. This allowed for automated testing, building, creating a Docker image, and deploying the application image to an Azure virtual machine after each push commit to GitHub. The technologies used for developing the application and CI/CD are listed below.",
+    "technologies": {
+      "frontend": "Reactjs, Typescript",
+      "CI/CD": "Github, Docker, Kubernetes, Jenkins, Azure"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Authentication System Using 3D Modeling",
+    "link": "https://github.com/piotrstepiennn/MultiAuthenticationApp_.NetCoreWebApi-React",
+    "description": "The project involves the development of an innovative user authentication system using 3D modeling techniques. Effective authentication methods were developed, including 3D captcha, generation of access codes delivered via email and mobile application, etc. 3D Captcha requires users to pass a test in a three-dimensional scene, where they must recreate the arrangement of cubes in 3D based on the displayed pattern. Additionally, server security features were implemented, including SSL certificate, hashing function for data integrity verification between the client and server, and the use of JWT tokens for server-side actions, etc.",
+    "technologies": {
+      "frontend": "TypeScript, React, threejs",
+      "backend": "asp.net core web api",
+      "mobile_app": ".NET MAUI",
+      "database": "MSSSQL Express"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Mobile Application for Warehouse Management with Barcode Scanner",
+    "link": "https://github.com/piotrstepiennn/warehouse-mobile-application-with-BarcodeScanner_XAMARIN",
+    "description": "A mobile application designed to help manage warehouses using C# and Xamarin.Forms. The application implements CRUD methods, allowing the creation, reading, updating, and deletion of products from the database. It also enables scanning the barcode of a product using the phone's camera (or another mobile device with a camera). If the product exists in the database, it displays its name, barcode, and quantity in the warehouse; otherwise, it indicates that the product does not exist but can be added to the database using the application.",
+    "technologies": {
+      "mobile_app": "Xamarin.Forms, ZXing, C#",
+      "database": "MSSSQL Express"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Application for Copying Files in a Specific Order",
+    "link": "https://github.com/piotrstepiennn/CopyFilesByModificationDate_WPF",
+    "description": "The application is used to copy MP3 files in an order dependent on the file's last modification date. Personally, I use the application to copy music to a USB drive used in the car - I have a car with an old radio that requires the use of an FM transmitter to play MP3s from a USB drive. The order in which the file is saved affects the playback order, and I want the newest tracks to be at the end of the folder. Therefore, I created this application to streamline music sorting. The application displays a list containing the title of the track and its last modification date based on the files in the source folder. It allows the removal of a file from the list of files to be copied. During copying, the progress bar increases with the number of copied files.",
+    "technologies": {
+      "wpf_app": "C#, .NET Framework WPF"
+    }
+  }
+]
