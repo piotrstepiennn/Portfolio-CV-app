@@ -84,6 +84,7 @@ const About = () => {
   return (
     <div
       data-testid="about"
+      id="about"
       className="container mt-5 align-items-center justify-content-center container"
     >
       <p
