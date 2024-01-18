@@ -9,7 +9,7 @@ RUN npm install
 
 COPY . .
 
-RUN vitest run
+RUN npm run coverage
 
 RUN npm run build
 
