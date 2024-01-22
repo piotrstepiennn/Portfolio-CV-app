@@ -1,0 +1,101 @@
+pipeline {
+    agent any
+
+    environment {
+        // Ustawienie wersji z Jenkins BUILD_NUMBER
+        APP_VERSION = "${env.BUILD_NUMBER}"
+    }
+
+    stages {
+        stage('Cleanup') {
+            steps {
+                // Usuwanie poprzednich kontenerów
+                script {
+                    sh 'docker ps -a -q --filter ancestor=portfolio_cv-app | xargs --no-run-if-empty docker stop'
+                    sh 'docker ps -a -q --filter ancestor=portfolio_cv-app | xargs --no-run-if-empty docker rm'
+                }
+
+                // Usuwanie poprzednich obrazów
+                script {
+                    sh 'docker images -q portfolio_cv-app | xargs --no-run-if-empty docker rmi -f'
+                }
+            }
+        }
+        stage('Clone Repository') {
+            steps {
+                script {
+                    // Klonowanie repozytorium GitHub
+                    git url: 'https://github.com/piotrstepiennn/Portfolio-CV-app.git/'
+                }
+            }
+        }
+        stage('Build Image') {
+            steps {
+                script {
+                    //def randomString = UUID.randomUUID().toString()
+                    // Budowanie obrazu testowego z Dockerfile.test
+                    //docker.build('portfolio_cv-app:${randomString}', '-f Dockerfile .')
+                    //:${APP_VERSION}
+                    sh 'docker build -t darkvod/portfolio_cv-app -f ./Dockerfile .'
+                }
+            }
+        }
+
+        stage('Push to DockerHub'){
+            steps{
+                script{
+                    withCredentials([string(credentialsId: 'dockerhubpwd', variable: 'dockerhubpwd')]) {
+                        // some block
+                        sh 'docker login -u darkvod -p ${dockerhubpwd}'
+                        sh 'docker push darkvod/portfolio_cv-app'
+                        //:${APP_VERSION}
+                    }
+                }
+            }
+        }
+
+        stage('Cleanup Old Pods') {
+            steps {
+                withCredentials([
+                    string(credentialsId: 'my_kubernetes', variable: 'api_token')
+                    ])
+                    {
+                    script {
+                        // Ustal etykietę, którą używasz dla swoich podów
+                        def labelSelector = 'app=portfolio-cv-app'
+
+                        // Pobierz nazwy przestarzałych podów
+                        def oldPods = sh(script: "kubectl get pods --selector=${labelSelector} --output=jsonpath='{.items[*].metadata.name}'", returnStdout: true).trim()
+
+                        // Jeśli są jakiekolwiek przestarzałe pody, usuń je
+                        if (oldPods) {
+                            sh "kubectl delete pods ${oldPods}"
+                        } else {
+                            echo "Brak przestarzałych podów do usunięcia."
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    withCredentials([
+                    string(credentialsId: 'my_kubernetes', variable: 'api_token'), string(credentialsId: 'dockerhubpwd', variable: 'dockerhubpwd')
+                    ])
+                    {
+                        sh 'docker login -u darkvod -p ${dockerhubpwd}'
+
+                        sh 'kubectl apply -f deployment.yaml'
+
+                        sh 'kubectl apply -f service.yaml'
+
+                        //sh 'kubectl run portfolio-cv-app-service --image=darkvod/portfolio_cv-app:${APP_VERSION}'
+                    }
+
+                }
+            }
+        }
+    }
+}
