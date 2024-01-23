@@ -5,7 +5,11 @@ import { flag_pl, flag_uk } from "../assets";
 const Navbar = () => {
   const [t, i18n] = useTranslation();
   const [language, setLanguage] = useState("pl");
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
+  const toggleNavbar = () => {
+    setIsNavCollapsed(!isNavCollapsed);
+  };
   useEffect(() => {
     i18n.changeLanguage(language);
   }, [language, i18n]);
@@ -15,43 +19,58 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav
-        data-testid="navbar"
-        className="navbar navbar-expand-lg navbar-light bg-white mt-3 mb-5"
-      >
-        <div className="container">
-          <a className="navbar-brand fs-1" href="#">
-            Piotr Stępień
-          </a>
-          <div className="navbar-nav ml-auto">
-            <a className="nav-link fs-4" href="#about">
-              {t("global.navbar.about")}
-            </a>
-            <a className="nav-link fs-4" href="#skills">
-              {t("global.navbar.skills")}
-            </a>
-            <a className="nav-link fs-4" href="#projects">
-              {t("global.navbar.projects")}
-            </a>
-            <a className="nav-link fs-4" href="#contact">
-              {t("global.navbar.contact")}
+      <div>
+        <nav
+            data-testid="navbar"
+            className="navbar navbar-expand-lg navbar-light bg-white mt-3 mb-5"
+        >
+          <div className="container">
+            <a className="navbar-brand fs-1" href="/">
+              Piotr Stępień
             </a>
             <button
-              onClick={toggleLanguage}
-              style={{ border: "none", background: "none" }}
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded={!isNavCollapsed}
+                aria-label="Toggle navigation"
+                onClick={toggleNavbar}
             >
-              <img
-                className="ms-4 border border-black"
-                src={language === "en" ? flag_uk : flag_pl}
-                alt={language === "en" ? "english" : "polski"}
-                style={{ width: "40px", height: "30px" }}
-              />
+              <span className="navbar-toggler-icon"></span>
             </button>
+            <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse justify-content-end`} id="navbarNav">
+              <div className="navbar-nav">
+                <a className="nav-link fs-4" href="#about" onClick={toggleNavbar}>
+                  {t('global.navbar.about')}
+                </a>
+                <a className="nav-link fs-4" href="#skills" onClick={toggleNavbar}>
+                  {t('global.navbar.skills')}
+                </a>
+                <a className="nav-link fs-4" href="#projects" onClick={toggleNavbar}>
+                  {t('global.navbar.projects')}
+                </a>
+                <a className="nav-link fs-4" href="#contact" onClick={toggleNavbar}>
+                  {t('global.navbar.contact')}
+                </a>
+                <button
+                    onClick={toggleLanguage}
+                    style={{border: 'none', background: 'none'}}
+                    className="ms-4"
+                >
+                  <img
+                      className="border border-black"
+                      src={language === 'en' ? flag_uk : flag_pl}
+                      alt={language === 'en' ? 'english' : 'polski'}
+                      style={{width: '40px', height: '30px'}}
+                  />
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
   );
 };
 

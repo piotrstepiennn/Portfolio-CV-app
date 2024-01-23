@@ -8,7 +8,7 @@ const Info = () => {
         <div className="col-md-12 d-flex justify-content-center align-items-center pt-5 mt-5">
           <img
             src={Img}
-            className="rounded mx-auto d-block img-fluid w-100 h-100"
+            className="rounded mx-auto d-block img-fluid w-50 h-50"
             alt="..."
           />
           <Profile />
