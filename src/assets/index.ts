@@ -24,7 +24,9 @@ import * as flagpl from "./images/flag_pl.png";
 import * as flaguk from "./images/flag_uk.png";
 import * as cvpl from "./CV/CV_PL.pdf";
 import * as cven from "./CV/CV_EN.pdf";
+import * as react_dotnet_logo from "./images/logo_react-dotnet.png";
 
+export const logo_react_dotnet = react_dotnet_logo.default;
 export const logoCisco = logoc.default;
 export const logoFreecodecamp = logofreecodecamp.default;
 export const logoGama = logogama.default;
