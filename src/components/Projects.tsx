@@ -31,7 +31,7 @@ const Projects = () => {
       className="container mt-5 align-items-center justify-content-center container"
     >
       <p
-        className="text-center text-nowrap text-secondary fw-bold fs-5"
+        className="text-center text-secondary fw-bold fs-5"
         style={style}
       >
         {t("global.projects.message")}
@@ -39,7 +39,7 @@ const Projects = () => {
       <p className="text-center text-nowrap text-dark fw-bold fs-1 mt-0">
         {t("global.projects.message2")}
       </p>
-      <p className="text-center text-nowrap text-secondary fw-bold fs-5 mb-5">
+      <p className="text-center text-secondary text-break fw-bold fs-5 mb-5">
         {t("global.projects.message3")}
       </p>
       <div className="row">

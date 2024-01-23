@@ -4,7 +4,7 @@ interface propsTypes {
 }
 const Skill = (props:propsTypes) => {
     return (
-        <div className="col-md-2">
+        <div className="col-md-2 ms-5 mb-1">
             <div className="p-3 d-flex align-items-center">
                 <div className="me-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
