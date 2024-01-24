@@ -16,8 +16,8 @@ const Skill = (props:propsTypes) => {
                     </svg>
                 </div>
                 <div>
-                    <p className="mb-0 text-center text-dark">{props.Skill}</p>
-                    <p className="mb-0 text-center text-secondary">{props.Level}</p>
+                    <p className="mb-0 text-center text-dark w-50">{props.Skill}</p>
+                    <p className="mb-0  text-start text-secondary">{props.Level}</p>
                 </div>
             </div>
         </div>

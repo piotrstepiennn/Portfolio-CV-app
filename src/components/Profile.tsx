@@ -25,7 +25,7 @@ const Profile = () => {
           <p className="text-center text-nowrap text-dark fw-bold fs-1">
               Piotr Stępień
           </p>
-          <p className="text-center text-nowrap text-secondary fw-bold fs-3">
+          <p className="text-center text-nowrap text-secondary fw-bold fs-4">
               Full Stack Developer
           </p>
           <div className="btn-group d-flex flex-wrap justify-content-center">

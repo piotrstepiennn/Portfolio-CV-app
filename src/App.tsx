@@ -7,7 +7,7 @@ import ContactInfo from "./components/ContactInfo.tsx";
 
 function App() {
   return (
-    <div className="container text-center mt-5">
+    <div className="container text-center mt-5" style={{overflowX: "hidden"}}>
       <Navbar />
       <Info />
       <About />
