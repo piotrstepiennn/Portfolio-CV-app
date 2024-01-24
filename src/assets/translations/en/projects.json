@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Minimalist Portfolio/CV using CI/CD Techniques",
     "link": "https://github.com/piotrstepiennn/Portfolio-CV-app",
-    "description": "This is a web application you are currently viewing. It serves as a minimalist portfolio and CV. The application is configured using CI/CD techniques. The main goal of its creation, besides presenting myself, was the hands-on configuration of the technology used in CI/CD. This allowed for automated testing, building, creating a Docker image, and deploying the application image to an Azure virtual machine after each push commit to GitHub. The technologies used for developing the application and CI/CD are listed below.",
+    "description": "This is a web application you are currently viewing. It serves as a minimalist portfolio and CV. The application is configured using CI/CD techniques. The main goal of its creation, besides presenting myself, was the hands-on configuration of the technology used in CI/CD. This allowed for automated testing, building, creating a Docker image, and deploying the application image to an Azure virtual machine after each push commit to GitHub. The application currently operates on Azure Service App due to the excessively high costs of maintaining the infrastructure I used during CI/CD. The technologies used for developing the application and CI/CD are listed below.",
     "technologies": {
       "frontend": "Reactjs, Typescript",
       "CI/CD": "Github, Docker, Kubernetes, Jenkins, Azure"
